@@ -1,0 +1,25 @@
+{
+  "name": "module-ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s2": "tape exercise.test.js | tap-spec",
+    "s2.module": "tape './exercise.test.js' | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KYTC-Front-End/module-ex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KYTC-Front-End/module-ex/issues"
+  },
+  "homepage": "https://github.com/KYTC-Front-End/module-ex#readme",
+  "dependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^5.6.5"
+  }
+}
