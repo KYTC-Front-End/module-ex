@@ -12,7 +12,7 @@ tape('Module Pattern', function (test) {
     t.equal(typeof UrlParser.protocol, 'function', 'Expect protocol method');
     t.equal(typeof UrlParser.domain, 'function', 'Expect domain method');
     t.equal(typeof UrlParser.path, 'function', 'Expect path method');
-    t.equal(typeof UrlParser.querystring, 'function', 'Expect querystring method');
+    t.equal(typeof UrlParser.query, 'function', 'Expect querystring method');
 
     t.equal(UrlParser.protocol(url), 'https');
     t.equal(UrlParser.domain(url), 'example.com');

@@ -18,23 +18,36 @@
  * | protocol |     |    domain      |   | path |  | querystring |
  */
 var UrlParser = (function () {
-  // fill in ...
 
-  return {
+const protocol = (url) => {
+  return url.split('://')[0];
+}
+
+const domain = (url) => {
+  return url.split('/')[2];
+}
+
+const path = (url) => {
+  return url.split('/')[3].split('?')[0];
+}
+
+const query = (url) => {
+  return url.split('/')[3].split('?')[1];
+}
+return{
     // a function that takes a URL and returns its protocol
-    protocol: null,
+    protocol: protocol,
 
     // a function that takes a URL and returns its domain
-    domain: null,
+    domain: domain,
 
     // a function that takes a URL and returns its path
-    path: null,
+    path: path,
 
     // a function that takes a URL and returns its query string
-    query: null,
+    query: query,
   };
-});
-
+})();
 
 
 
